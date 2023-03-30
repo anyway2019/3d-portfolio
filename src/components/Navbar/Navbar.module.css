@@ -1,0 +1,67 @@
+.Button{
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  background-color: #da4ea2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.img{
+  width: 20px;
+  cursor: pointer;
+}
+
+.Icons{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Section{
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.Container{
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.Links{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.Logo{
+  height: 50px;
+}
+
+.List{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.ListItem{
+  cursor: pointer;
+}
