@@ -48,15 +48,15 @@ type TextProps = {
 }
 const Title : FunctionComponent<TextProps> = ({children})=>{
   return (
-    <div className={styles.Right}>
+    <h1 className={styles.Title}>
       {children}
-    </div>
+    </h1>
   )
 };
 
 const WhatWeDo : FunctionComponent<MultiContainerProps> = ({children})=>{
   return (
-    <div className={styles.Right}>
+    <div className={styles.WhatWeDo}>
       {children}
     </div>
   )
@@ -73,17 +73,17 @@ const Line : FunctionComponent<ImageProps> = ({src})=>{
 
 const Subtitle : FunctionComponent<TextProps> = ({children})=>{
   return (
-    <div className={styles.Subtitle}>
+    <h2 className={styles.Subtitle}>
       {children}
-    </div>
+    </h2>
   )
 };
 
 const Desc : FunctionComponent<TextProps> = ({children})=>{
   return (
-    <div className={styles.Desc}>
+    <p className={styles.Desc}>
       {children}
-    </div>
+    </p>
   )
 };
 
