@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Who from './components/Who'
 import Works from './components/Works'
 import Contact from './components/Contact'
+import './App.scss'
 
 function App() {
   const [count, setCount] = useState(0)
