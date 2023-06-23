@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Shoe from "../Shoe";
-import styles from "./ProductDesign.module.scss"
+import styles from "./ProductDesign.module.scss";
 
 const ProductDesign = () => {
   return (

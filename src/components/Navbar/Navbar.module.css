@@ -1,4 +1,4 @@
-.Button{
+.Button {
   width: 100px;
   text-align: center;
   padding: 10px;
@@ -9,50 +9,51 @@
   cursor: pointer;
 }
 
-.img{
+.img {
   width: 20px;
   cursor: pointer;
 }
 
-.Icons{
+.Icons {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.Section{
+.Section {
   display: flex;
   justify-content: center;
+  scroll-snap-align: center;
 
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
 }
 
-.Container{
-  width: 1400px;
+.Container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
+  padding: 24px;
+  width: 100%;
 
   @media only screen and (max-width: 768px) {
     width: 100%;
-    padding: 10px;
+    padding: 24px;
   }
 }
 
-.Links{
+.Links {
   display: flex;
   align-items: center;
   gap: 50px;
 }
 
-.Logo{
+.Logo {
   height: 50px;
 }
 
-.List{
+.List {
   display: flex;
   gap: 20px;
   list-style: none;
@@ -62,6 +63,18 @@
   }
 }
 
-.ListItem{
+.ListItem {
   cursor: pointer;
+  color: whitesmoke;
+  font-size: large;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(152, 136, 223);
+  text-decoration: underline;
 }

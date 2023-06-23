@@ -1,101 +1,61 @@
-import React, { Suspense,FunctionComponent} from "react";
+import React, { Suspense, FunctionComponent } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import Cube from '../Cube'
-import styles from './Who.module.scss'
+import Cube from "../Cube";
+import styles from "./Who.module.scss";
 
 type SingleContainerProps = {
-  children:JSX.Element
-}
+  children: JSX.Element;
+};
 
 type MultiContainerProps = {
-  children:JSX.Element[]
-}
-const Section : FunctionComponent<SingleContainerProps> = ({children})=>{
-  return (
-    <div className={styles.Section}>
-      {children}
-    </div>
-  )
+  children: JSX.Element[];
+};
+const Section: FunctionComponent<SingleContainerProps> = ({ children }) => {
+  return <div className={styles.Section}>{children}</div>;
 };
 
-const Container : FunctionComponent<MultiContainerProps> = ({children})=>{
-  return (
-    <div className={styles.Container}>
-      {children}
-    </div>
-  )
+const Container: FunctionComponent<MultiContainerProps> = ({ children }) => {
+  return <div className={styles.Container}>{children}</div>;
 };
 
-const Left : FunctionComponent<SingleContainerProps> = ({children})=>{
-  return (
-    <div className={styles.Left}>
-      {children}
-    </div>
-  )
+const Left: FunctionComponent<SingleContainerProps> = ({ children }) => {
+  return <div className={styles.Left}>{children}</div>;
 };
 
-const Right : FunctionComponent<MultiContainerProps> = ({children})=>{
-  return (
-    <div className={styles.Right}>
-      {children}
-    </div>
-  )
+const Right: FunctionComponent<MultiContainerProps> = ({ children }) => {
+  return <div className={styles.Right}>{children}</div>;
 };
 
 type TextProps = {
-  children:string
-}
-const Title : FunctionComponent<TextProps> = ({children})=>{
-  return (
-    <h1 className={styles.Title}>
-      {children}
-    </h1>
-  )
+  children: string;
+};
+const Title: FunctionComponent<TextProps> = ({ children }) => {
+  return <h1 className={styles.Title}>{children}</h1>;
 };
 
-const WhatWeDo : FunctionComponent<MultiContainerProps> = ({children})=>{
-  return (
-    <div className={styles.WhatWeDo}>
-      {children}
-    </div>
-  )
+const WhatWeDo: FunctionComponent<MultiContainerProps> = ({ children }) => {
+  return <div className={styles.WhatWeDo}>{children}</div>;
 };
 
 type ImageProps = {
-  src:string
-}
-const Line : FunctionComponent<ImageProps> = ({src})=>{
-  return (
-    <img src={src} className={styles.Line}/>
-  )
+  src: string;
+};
+const Line: FunctionComponent<ImageProps> = ({ src }) => {
+  return <img src={src} className={styles.Line} />;
 };
 
-const Subtitle : FunctionComponent<TextProps> = ({children})=>{
-  return (
-    <h2 className={styles.Subtitle}>
-      {children}
-    </h2>
-  )
+const Subtitle: FunctionComponent<TextProps> = ({ children }) => {
+  return <h2 className={styles.Subtitle}>{children}</h2>;
 };
 
-const Desc : FunctionComponent<TextProps> = ({children})=>{
-  return (
-    <p className={styles.Desc}>
-      {children}
-    </p>
-  )
+const Desc: FunctionComponent<TextProps> = ({ children }) => {
+  return <p className={styles.Desc}>{children}</p>;
 };
 
-const Button : FunctionComponent<TextProps> = ({children})=>{
-  return (
-    <button className={styles.Button}>
-      {children}
-    </button>
-  )
+const Button: FunctionComponent<TextProps> = ({ children }) => {
+  return <button className={styles.Button}>{children}</button>;
 };
-
-
 
 const Who = () => {
   return (

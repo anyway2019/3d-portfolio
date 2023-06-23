@@ -1,4 +1,4 @@
-.Container{
+.Container {
   height: 100vh;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -6,7 +6,8 @@
   scrollbar-width: none;
   color: white;
   background: url("./img/bg.jpeg");
-  &::-webkit-scrollbar{
+  background-repeat: no-repeat;
+  &::-webkit-scrollbar {
     display: none;
   }
 }

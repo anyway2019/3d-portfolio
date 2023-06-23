@@ -16,6 +16,8 @@
     "@types/three": "^0.150.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router": "^6.13.0",
+    "react-router-dom": "^6.13.0",
     "react-simple-maps": "^3.0.0",
     "sass": "^1.60.0",
     "three": "^0.150.1"

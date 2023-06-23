@@ -1,2 +1,2 @@
-import Shoe from "./Shoe";  
+import Shoe from "./Shoe";
 export default Shoe;

@@ -20,7 +20,12 @@ const Works = () => {
         <section className={styles.Left}>
           <ul className={styles.List}>
             {data.map((item) => (
-              <li className={styles.ListItem} key={item} text={item} onClick={() => setWork(item)}>
+              <li
+                className={styles.ListItem}
+                key={item}
+                text={item}
+                onClick={() => setWork(item)}
+              >
                 {item}
               </li>
             ))}

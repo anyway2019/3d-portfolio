@@ -1,4 +1,4 @@
-.Container{
+.Container {
   height: 100%;
   scroll-snap-align: center;
   width: 1400px;
@@ -13,7 +13,7 @@
   }
 }
 
-.Section{
+.Section {
   height: 100vh;
   scroll-snap-align: center;
   display: flex;
@@ -26,7 +26,7 @@
   }
 }
 
-.Left{
+.Left {
   flex: 2;
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@
   }
 }
 
-.Title{
+.Title {
   font-size: 74px;
 
   @media only screen and (max-width: 768px) {
@@ -53,25 +53,25 @@
   gap: 10px;
 }
 
-.Line{
+.Line {
   height: 5px;
 }
 
-.Subtitle{
+.Subtitle {
   color: #da4ea2;
 }
 
-.Desc{
+.Desc {
   font-size: 24px;
   color: lightgray;
-  
+
   @media only screen and (max-width: 768px) {
     padding: 20px;
     text-align: center;
   }
 }
 
-.Button{
+.Button {
   background-color: #da4ea2;
   color: white;
   font-weight: 500;
@@ -83,7 +83,7 @@
   cursor: pointer;
 }
 
-.Right{
+.Right {
   flex: 3;
   position: relative;
 
@@ -93,7 +93,7 @@
   }
 }
 
-.Img{
+.Img {
   width: 800px;
   height: 600px;
   object-fit: contain;

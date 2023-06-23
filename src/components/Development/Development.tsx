@@ -2,19 +2,14 @@ import React, { Suspense } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Atom from "../Atom";
-import styles from './Development.module.scss'
+import styles from "./Development.module.scss";
 
 type TextProps = {
-    children:string
-}
-const Desc = ({children}:TextProps)=>{
-    return (
-        <div className={styles.Desc}>
-            {children}
-        </div>
-    )
+  children: string;
 };
-
+const Desc = ({ children }: TextProps) => {
+  return <div className={styles.Desc}>{children}</div>;
+};
 
 const Development = () => {
   return (

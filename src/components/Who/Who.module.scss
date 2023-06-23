@@ -1,11 +1,11 @@
-.Section{
+.Section {
   height: 100vh;
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
 }
 
-.Container{
+.Container {
   height: 100vh;
   scroll-snap-align: center;
   width: 1400px;
@@ -13,7 +13,7 @@
   justify-content: space-between;
 }
 
-.Left{
+.Left {
   flex: 1;
 
   @media only screen and (max-width: 768px) {
@@ -21,7 +21,7 @@
   }
 }
 
-.Title{
+.Title {
   font-size: 74px;
 
   @media only screen and (max-width: 768px) {
@@ -29,7 +29,7 @@
   }
 }
 
-.Right{
+.Right {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -42,26 +42,26 @@
   }
 }
 
-.WhatWeDo{
+.WhatWeDo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.Line{
+.Line {
   height: 5px;
 }
 
-.Subtitle{
+.Subtitle {
   color: #da4ea2;
 }
 
-.Desc{
+.Desc {
   font-size: 24px;
   color: lightgray;
 }
 
-.Button{
+.Button {
   background-color: #da4ea2;
   color: white;
   font-weight: 500;

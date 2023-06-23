@@ -2,7 +2,7 @@ import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React, { Suspense } from "react";
 import Mac from "../Mac";
-import styles from "./WebDesign.module.scss"
+import styles from "./WebDesign.module.scss";
 
 const WebDesign = () => {
   return (

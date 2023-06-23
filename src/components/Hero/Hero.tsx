@@ -2,16 +2,15 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import Navbar from "../Navbar";
-import styles from './Hero.module.scss';
+import styles from "./Hero.module.scss";
 
 const Hero = () => {
   return (
     <div className={styles.Section}>
-      <Navbar />
       <div className={styles.Container}>
         <div className={styles.Left}>
           <div className={styles.Title}>Think. Make. Solve.</div>
-          <div  className={styles.WhatWeDo}>
+          <div className={styles.WhatWeDo}>
             <img className={styles.Line} src="./img/line.png" />
             <div className={styles.Subtitle}>What we Do</div>
           </div>

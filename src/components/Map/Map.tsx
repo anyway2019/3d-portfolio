@@ -4,7 +4,7 @@ import {
   Geographies,
   Geography,
   Annotation,
-  ZoomableGroup
+  ZoomableGroup,
 } from "react-simple-maps";
 
 const Map = () => {
@@ -14,9 +14,9 @@ const Map = () => {
       projectionConfig={{
         rotate: [-10.0, -52.0, 0],
         center: [-5, -3],
-        scale: 1600
+        scale: 1600,
       }}
-      style={{width:"100%", height:"100%"}}
+      style={{ width: "100%", height: "100%" }}
     >
       <Geographies
         geography="/features.json"
@@ -37,7 +37,7 @@ const Map = () => {
         connectorProps={{
           stroke: "white",
           strokeWidth: 2,
-          strokeLinecap: "round"
+          strokeLinecap: "round",
         }}
       >
         <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white">
@@ -51,7 +51,7 @@ const Map = () => {
         connectorProps={{
           stroke: "white",
           strokeWidth: 2,
-          strokeLinecap: "round"
+          strokeLinecap: "round",
         }}
       >
         <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white">

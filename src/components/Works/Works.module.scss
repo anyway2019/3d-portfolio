@@ -1,4 +1,4 @@
-.Section{
+.Section {
   height: 100vh;
   scroll-snap-align: center;
   display: flex;
@@ -9,7 +9,7 @@
   font-weight: 300;
 }
 
-.Container{
+.Container {
   width: 1400px;
   display: flex;
   justify-content: space-between;
@@ -20,7 +20,7 @@
   }
 }
 
-.Left{
+.Left {
   flex: 1;
   display: flex;
   align-items: center;
@@ -31,14 +31,14 @@
   }
 }
 
-.List{
+.List {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.ListItem{
+.ListItem {
   font-size: 90px;
   font-weight: bold;
   cursor: pointer;
@@ -76,6 +76,6 @@
   }
 }
 
-.Right{
+.Right {
   flex: 1;
 }
