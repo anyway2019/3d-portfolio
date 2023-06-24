@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from "react";
 import styles from "./Navbar.module.css";
-import { Link } from "react-router-dom";
+import "./Navbar.module.css";
+import { NavLink } from "react-router-dom";
 
 type SingleContainerProps = {
   children: JSX.Element;
@@ -30,17 +31,23 @@ const Logo: FunctionComponent<LogoProps> = ({ src }) => {
 };
 
 const List: FunctionComponent<MultiContainerProps> = ({ children }) => {
-  return <div className={styles.List}>{children}</div>;
+  return <ul className={styles.List}>{children}</ul>;
 };
 
 type TextProps = {
   children: string;
 };
+
+const navLinkClassName = ({ isActive }) => {
+  return isActive ? styles.ListItem + " " + styles.Active : styles.ListItem;
+};
+
 const ListItem: FunctionComponent<TextProps> = ({ children }) => {
   return (
-    <Link to={"/" + children} className={styles.ListItem}>
+    <NavLink to={"/" + children} className={navLinkClassName}>
+      {" "}
       {children}
-    </Link>
+    </NavLink>
   );
 };
 
