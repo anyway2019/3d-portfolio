@@ -5,9 +5,9 @@ import Works from "./components/Works";
 import Contact from "./components/Contact";
 import "./App.scss";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import ContactPage from "./pages/Contact";
-import StudioPage from "./pages/Studio";
-import WorksPage from "./pages/Works";
+import ContactPage from "./pages/Contact/Contact";
+import StudioPage from "./pages/Studio/Studio";
+import WorksPage from "./pages/Works/Works";
 import Navbar from "./components/Navbar";
 
 const router = createBrowserRouter([
